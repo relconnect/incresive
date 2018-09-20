@@ -20,6 +20,7 @@ const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 const sequence = require('run-sequence');
 
+
 gulp.task('html', () =>
   gulp
     .src('./src/*.html')
@@ -65,7 +66,13 @@ gulp.task('scripts', () =>
     .pipe(uglify())
     .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('./build/js')),
-);
+);   
+
+gulp.task('bootstrap', () => 
+      gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js','node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
+      .pipe(gulp.dest("build/js"))
+      .pipe(gulp.dest("src/js")),
+); 
 
 gulp.task('svg-sprite', () =>
   gulp
@@ -102,7 +109,7 @@ gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('src/scss/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
-});
+  });
 
 gulp.task('serve', ['styles'], () =>
   browserSync.init({
@@ -130,6 +137,7 @@ gulp.task('build', cb =>
     'styles',
     'html',
     'scripts',
+    'bootstrap',    
     cb,
   ),
 );
