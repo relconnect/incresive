@@ -1,0 +1,150 @@
+.collaboration__section {
+  padding-top: 95px;
+}
+
+.collaboration-container {
+  width: 920px;
+  padding: 0 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collaboration__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Rg";
+  font-weight: 800;
+  color: rgb(16, 16, 16);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.collaboration-step__number {
+  border-radius: 3px;
+  width: 67px;
+  height: 67px;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &-content {
+    font-size: 48px;
+    font-family: "Proxima Nova Rg";  
+    transform: scale(1, 0.84); 
+  }
+
+}
+
+.collaboration-step {
+  flex-basis: 285px; 
+  margin-bottom: 125px;
+
+  &__step-nowrap {
+    white-space: nowrap;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-family: 'hanken_groteskbold';
+    color: rgb(0, 0, 0);  
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+  
+  &__line {
+    height: 1px;
+    background-color: rgba(51, 51, 51, 0.2);
+    
+    &-small {
+      position: absolute;
+      width: 26px;    
+      left: 80px;
+    }
+
+    &-large {
+      position: absolute;
+      width: 130px;    
+      left: 142px;
+    }
+
+    &-last {
+      position: absolute;
+      width: 165px;    
+      left: 142px;
+    }
+    
+  }
+
+  &__step-text {
+    font-size: 8px;
+    font-family: 'hanken_groteskbold';
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    position: absolute;
+    left: 115px;
+  }
+
+  &:nth-child(3), &:nth-child(6){
+    flex: 1 0 auto;
+  } 
+  
+  &:hover .collaboration-step__number {
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgb(59, 153, 213)),
+      to(rgb(77, 203, 213))
+    );
+    background-image: -webkit-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: -o-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: linear-gradient(
+      to left,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+  }
+
+  &:hover .collaboration-step__title {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgb(59, 153, 213)),
+      to(rgb(77, 203, 213))
+    );    
+    background-image: -webkit-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: -o-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: linear-gradient(
+      to left,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+  }
+
+}
