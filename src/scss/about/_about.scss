@@ -3,14 +3,14 @@
 }
 
 .collaboration-container {
-  width: 920px;
+  max-width: 920px;
   padding: 0 5px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.collaboration__title {
+.section__title {
   font-size: 30px;
   font-family: "Proxima Nova Rg";
   font-weight: 800;
@@ -37,11 +37,15 @@
     transform: scale(1, 0.84); 
   }
 
+  &_displased {
+    margin-left: 92px;
+  }
+
 }
 
 .collaboration-step {
   flex-basis: 285px; 
-  margin-bottom: 125px;
+  margin-bottom: 125px;  
 
   &__step-nowrap {
     white-space: nowrap;
@@ -78,6 +82,35 @@
       width: 165px;    
       left: 142px;
     }
+
+    &-short {
+      position: absolute;
+      width: 73px; 
+      height: 1px;   
+      left: 142px;
+    }
+
+    &-vertical {
+      position: absolute;
+      width: 1px; 
+      height: 264px;   
+      left: 306px;
+      top: 33px;
+    }
+
+    &-rect {
+      border-left: 1px;
+      border-bottom: 1px;
+      border-top: 1px;
+      border-right: 0px;
+      border-style: solid;
+      border-color: rgba(51,51,51,.2);
+      height: 264px;
+      width: 65px;
+      position: absolute;
+      top: 33px;
+      right: 86px;      
+    }
     
   }
 
@@ -94,6 +127,71 @@
   &:nth-child(3), &:nth-child(6){
     flex: 1 0 auto;
   } 
+
+  &:hover .collaboration-step__number-content {
+    color: #fff;
+  }
+
+  &:hover .collaboration-step__line-rect {
+    border-image: linear-gradient(
+        to left,
+        rgb(59, 153, 213),
+        rgb(77, 203, 213)
+      );
+    border-image-slice: 1;
+  }
+
+  &:hover .collaboration-step__line {
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgb(59, 153, 213)),
+      to(rgb(77, 203, 213))
+    );    
+    background-image: -webkit-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: -o-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: linear-gradient(
+      to left,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+  }
+
+  &:hover .collaboration-step__step-text{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(rgb(59, 153, 213)),
+      to(rgb(77, 203, 213))
+    );    
+    background-image: -webkit-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: -o-linear-gradient(
+      right,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+    background-image: linear-gradient(
+      to left,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    );
+  }
   
   &:hover .collaboration-step__number {
     background-image: -webkit-gradient(
@@ -148,3 +246,76 @@
   }
 
 }
+
+.offer-block {
+  border-radius: 3px;  
+  width: 438px;
+  height: 202px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+
+  &__content {
+    font-size: 30px;
+    font-family: "Proxima Nova Rg";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  &_blue {
+    background-image: linear-gradient(to left,rgb(59, 153, 213) 0%,
+    rgb(77, 203, 213) 100%)
+  }
+
+  &_green {
+    background-image: linear-gradient(to left,rgb(85, 170, 193) 0%,
+    rgb(0, 207, 153)  100%)
+  }
+
+  &_left{
+    margin-left: 75px;
+  }
+
+  &_right{
+    margin-left: 25px;
+  }  
+}
+
+.offer-button {  
+  border: 1px solid rgb(51, 51, 51);    
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer; 
+  margin-top: 66px;    
+
+  &__text {
+    font-size: 18px;
+    font-family: "Proxima Nova Rg";
+    font-weight: 400 ;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    padding: 14px 50px; 
+    display: inline-block;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    background-image: linear-gradient(
+      to left,
+      rgb(59, 153, 213) 0%,
+      rgb(77, 203, 213) 100%
+    ); 
+  }
+
+  &:hover &__text {
+    color: #fff;
+  }
+}
+
+.offer {
+  padding-bottom: 132px;
+}
+
+
