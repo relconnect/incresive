@@ -1081,8 +1081,8 @@ html {
 }
 
 .collaboration-step:hover .collaboration-step__line-rect {
-  -o-border-image: linear-gradient(to left, #3b99d5, #4dcbd5);
-  border-image: linear-gradient(to left, #3b99d5, #4dcbd5);
+  -o-border-image: linear-gradient(to right, #3b99d5, #4dcbd5);
+  border-image: linear-gradient(to right, #3b99d5, #4dcbd5);
   border-image-slice: 1;
 }
 
@@ -1169,6 +1169,16 @@ html {
 
 .offer {
   padding-bottom: 132px;
+}
+
+.partner-container {
+  margin-bottom: 195px;
+}
+
+.partner-container__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 @media (min-width: 576px) {

@@ -134,7 +134,7 @@
 
   &:hover .collaboration-step__line-rect {
     border-image: linear-gradient(
-        to left,
+        to right,
         rgb(59, 153, 213),
         rgb(77, 203, 213)
       );
@@ -316,6 +316,16 @@
 
 .offer {
   padding-bottom: 132px;
+}
+
+.partner-container {
+  margin-bottom: 195px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
 
