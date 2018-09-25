@@ -1181,6 +1181,17 @@ html {
   align-items: flex-end;
 }
 
+.partner-container__img {
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.partner-container__img:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
