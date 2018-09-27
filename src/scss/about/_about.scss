@@ -140,7 +140,7 @@
     color: #fff;
   }
 
-  &:hover .collaboration-step__line-rect-4,.collaboration-step__line-rect-6 {
+  &:hover .collaboration-step__line-rect-4, &:hover .collaboration-step__line-rect-6 {
     border-image: linear-gradient(
         to right,
         rgb(59, 153, 213),

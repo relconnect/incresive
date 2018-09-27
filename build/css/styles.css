@@ -1084,7 +1084,7 @@ html {
 }
 
 .collaboration-step:hover .collaboration-step__line-rect-4,
-.collaboration-step .collaboration-step__line-rect-6 {
+.collaboration-step:hover .collaboration-step__line-rect-6 {
   -o-border-image: linear-gradient(to right, #3b99d5, #4dcbd5);
   border-image: linear-gradient(to right, #3b99d5, #4dcbd5);
   border-image-slice: 1;
