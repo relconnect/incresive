@@ -81,7 +81,7 @@
       left: 227px;
     }
   
-    &-large {
+    &-large,&-large-2 {
       position: absolute;
       width: 130px;    
       left: 142px;
@@ -100,7 +100,7 @@
       left: 142px;
     }
 
-    &-vertical-3, &-vertical-7{
+    &-vertical-3, &-vertical-7,&-vertical-1,&-vertical-5{
       position: absolute;
       width: 1px; 
       height: 264px;   
@@ -108,7 +108,7 @@
       top: 33px;
     }
 
-    &-rect-6, &-rect-4 {
+    &-rect-6, &-rect-4,&-rect-2 {
       border-left: 1px;
       border-bottom: 1px;
       border-top: 1px;
@@ -140,7 +140,7 @@
     color: #fff;
   }
 
-  &:hover .collaboration-step__line-rect-4, &:hover .collaboration-step__line-rect-6 {
+  &:hover .collaboration-step__line-rect-4, &:hover .collaboration-step__line-rect-6, &:hover .collaboration-step__line-rect-2 {
     border-image: linear-gradient(
         to right,
         rgb(59, 153, 213),

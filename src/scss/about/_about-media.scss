@@ -38,7 +38,8 @@
       display: none;
     }
 
-    &__line-long {
+    &__line-long
+     {
       width: 162px;
     }
 
@@ -49,11 +50,13 @@
     &__line-vertical-3 {
       left: 271px;
       top: -230px;
+      height: 264px;
     }
 
     &__line-vertical-7 {
       left: 303px;
       top: -230px;
+      height: 264px;
     }
 
     &__first {
@@ -104,11 +107,11 @@
     }
 
     &__line-rect-4,
-    &__line-vertical-7, &__line-small-8 {
+    &__line-vertical-7,
+    &__line-small-8 {
       display: none;
     }
   }
-
 }
 
 // max-width: 768px
@@ -124,6 +127,192 @@
 
     &__wrapper {
       margin-bottom: 80px;
+    }
+  }
+
+  .collaboration-step {
+    flex-basis: 35%;
+    margin-bottom: 95px;
+
+    // margin for steps
+    &__second,
+    &__seventh {
+      margin-left: 80px;
+    }
+
+    &__fourth,
+    &__fifth {
+      margin-left: 85px;
+    }
+
+    &__third {
+      margin-left: 50px;
+    }
+
+    // lines width & positions
+    &__line-large, &__line-large-2 {
+      width: 103px;
+    }
+
+    &__line-last {
+      width: 48px;
+    }
+
+    &__line-vertical-7 {
+      left: 245px;
+    }
+
+    &__line-vertical-1 {
+      left: 245px;
+    }
+
+    &__line-vertical-3 {
+      left: 190px;
+    }
+
+    &__line-short {
+      width: 70px;
+    }
+
+    &__line-6 {
+      width: 73px;
+    }
+
+    &__line-5 {
+      width: 47px;
+    }
+
+    &__line-small-8 {
+      width: 15px;
+    }
+  }
+
+  .collaboration-container {
+    justify-content: flex-start;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .collaboration-step {
+    flex-basis: 200px;
+
+    &__title {
+      padding-left: 5px;
+    }
+
+    &__line-6 {
+      width: 85px;
+    }
+
+    &__second,
+    &__seventh {
+      margin-left: 0px;
+    }
+
+    &__fourth,
+    &__fifth {
+      margin-left: 0px;
+    }
+
+    &__third {
+      margin-left: 0px;
+    }
+
+    &__first {
+      order: 1;
+    }
+
+    &__second {
+      order: 2;
+      margin-left: 55px;
+    }
+
+    &__third {
+      order: 3;
+      margin-left: 55px;
+    }
+
+    &__fourth {
+      order: 4;
+      margin-left: 55px;
+    }
+
+    &__fifth {
+      order: 5;
+      margin-left: 55px;
+    }
+
+    &__sixth {
+      order: 6;
+      margin-left: 55px;
+    }
+
+    &__seventh {
+      order: 7;
+      margin-left: 55px;
+    }
+
+    &__eighth {
+      order: 8;
+      margin-left: 55px;
+    }
+
+    &__line-rect-4,
+    &__line-rect-6,
+    &__line-rect-2 {
+      display: block;
+      width: 40px;
+      right: 80px;
+      height: 234px;
+    }
+
+    &__line-vertical-3,
+    &__line-vertical-7 {
+      top: 33px;
+    }
+
+    &__line-vertical-3 {
+      height: 234px;
+    }
+
+    &__line-vertical-7,&__line-vertical-1 {
+      height: 234px;
+    }
+
+    &__line-small-8 {
+      width: 18px;
+    }
+
+    &__line-short {
+      width: 49px;
+    }
+
+    &__line-vertical-5 {
+      left: 227px;
+      height: 234px;
+    }
+
+    &__line-5 {
+      width: 85px;
+    }
+
+    &__line-large-2 {
+      width: 49px;
+    }
+  }
+
+  .collaboration-container {
+    width: 300px;
+  }
+  
+}
+@media (min-width: 576px) {
+  .collaboration-step {
+    &__line-rect-2,
+    &__line-vertical-5,
+    &__line-vertical-1 {
+      display: none;
     }
   }
 }
