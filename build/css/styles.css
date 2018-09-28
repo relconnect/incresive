@@ -2820,6 +2820,10 @@ html {
 }
 
 @media (max-width: 575px) {
+  .offer-block__content {
+    font-size: 22px;
+  }
+
   .collaboration-step {
     flex-basis: 200px;
   }
