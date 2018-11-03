@@ -1201,6 +1201,46 @@ html {
   transform: scale(2);
 }
 
+.blog-wrapper {
+  max-width: 1316px;
+  margin: 0 auto;
+  padding: 36px 50px 0px 50px;
+}
+
+.filter {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+
+.filter__item {
+  margin-right: 25px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.filter__label {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 16px 35px;
+  font-size: 18px;
+  font-family: "Proxima Nova Rg";
+  color: #2b2b2b;
+  line-height: 1.2;
+}
+
+.filter__label:hover {
+  background: linear-gradient(270deg, #3b99d5 0, #4dcbd5);
+  color: white;
+  border-color: transparent;
+}
+
+.filter input {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

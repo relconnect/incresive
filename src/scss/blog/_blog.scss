@@ -1,0 +1,43 @@
+@import "blog-media";
+
+.blog-wrapper {
+  max-width: 1316px;
+  margin: 0 auto;
+  padding: 36px 50px 0px 50px;
+}
+
+.filter {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 25px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    padding: 16px 35px;
+    font: {
+      size: 18px;
+      family: "Proxima Nova Rg";
+    }
+    color: rgb(43, 43, 43);
+    line-height: 1.2;
+  }
+
+  &__label:hover {
+    background: linear-gradient(270deg, #3b99d5 0, #4dcbd5);
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+  }
+
+  & input {
+    display: none;
+  }
+}
