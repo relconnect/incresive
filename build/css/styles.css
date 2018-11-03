@@ -416,51 +416,65 @@ template {
 }
 
 @font-face {
-  font-family: 'hanken_groteskbold';
+  font-family: "hanken_groteskbold";
   src: url("../fonts/hankengrotesk/hankengrotesk-bold-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_groteskbold_italic';
+  font-family: "hanken_groteskbold_italic";
   src: url("../fonts/hankengrotesk/hankengrotesk-bolditalic-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_groteskitalic';
+  font-family: "hanken_groteskitalic";
   src: url("../fonts/hankengrotesk/hankengrotesk-italic-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_grotesklight';
+  font-family: "hanken_grotesklight";
   src: url("../fonts/hankengrotesk/hankengrotesk-light-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_groteskmedium';
+  font-family: "hanken_groteskmedium";
   src: url("../fonts/hankengrotesk/hankengrotesk-medium-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_groteskregular';
+  font-family: "hanken_groteskregular";
   src: url("../fonts/hankengrotesk/hankengrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'hanken_grotesksemibold';
+  font-family: "hanken_grotesksemibold";
   src: url("../fonts/hankengrotesk/hankengrotesk-semibold-webfont.woff2") format("woff2"), url("../fonts/hankengrotesk/hankengrotesk-semibold-webfont.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HKGrotesk bold";
+  src: url("../fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -1213,6 +1227,7 @@ html {
   padding-left: 0px;
   margin: 0px;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .filter__item {
@@ -1239,6 +1254,188 @@ html {
 
 .filter input {
   display: none;
+}
+
+.post {
+  margin-bottom: 150px;
+}
+
+.post .image__wrapper {
+  position: relative;
+}
+
+.post .image__wrapper:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.post__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.post__theme {
+  font-size: 10px;
+  font-family: "HKGrotesk bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.post__theme .post__link {
+  color: #8e8e8e;
+  letter-spacing: 3px;
+}
+
+.post__title {
+  width: 83%;
+  position: absolute;
+  bottom: 55px;
+  left: 8.5%;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.1);
+}
+
+.post__name {
+  font-size: 20px;
+  font-family: "HKGrotesk bold";
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post__name .post__link {
+  color: black;
+}
+
+.post__date {
+  font-size: 11px;
+  font-family: "HKGrotesk bold";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.post__date .post__link {
+  color: #4cc9d5;
+  letter-spacing: 3px;
+}
+
+.post__link {
+  text-decoration: none;
+}
+
+.post__button {
+  position: absolute;
+  width: 175px;
+  background-image: linear-gradient(to left, #3b99d5 0%, #4dcbd5 100%);
+  border-radius: 3px;
+  bottom: 22px;
+  left: 28%;
+}
+
+.post__button .post__link {
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
+
+.post__button-text {
+  font-size: 18px;
+  font-family: "Proxima Nova Rg";
+  color: white;
+  line-height: 1.2;
+}
+
+.post__button-text:after {
+  content: url(../../img/arrow-right.png);
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+
+.next-row {
+  margin-top: 145px;
+}
+
+.list-wrapper {
+  margin-top: 50px;
+}
+
+.list {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.list__link {
+  display: flex;
+  text-decoration: none;
+  font-size: 33px;
+  font-family: "Proxima Nova Rg";
+  text-transform: uppercase;
+  align-self: flex-end;
+  -webkit-transform: scaleY(0.84);
+  transform: scaleY(0.84);
+  color: black;
+}
+
+.list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  width: 41px;
+  height: 41px;
+  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.1);
+  margin-right: 165px;
+  position: relative;
+}
+
+.list__item:last-child {
+  margin-right: 0px;
+}
+
+.list__item:hover {
+  background-image: linear-gradient(to left, #3b99d5 0%, #4dcbd5 100%);
+}
+
+.list__item:hover .list__link {
+  color: #fff;
+}
+
+.list__line {
+  position: absolute;
+}
+
+.list__line_small {
+  width: 27px;
+  left: 56px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.list__line_long {
+  width: 60px;
+  left: 130px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.list__line_text {
+  font-size: 8px;
+  font-family: "HKGrotesk bold";
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  line-height: 1.2;
+  left: 95px;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 576px) {
