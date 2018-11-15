@@ -22,20 +22,41 @@
 </head>
 
 <body>
+        <header class="blog-header">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <h1 class="header-title">incresive blog</h1>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 col-12 content-padding">
+                        <form action="#">
+                      <input type="text" class="search-form" name="search" id="search" placeholder="Type a keyword">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+            </header>
     <main class="blog-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <ul class="filter">
-                        <li class="filter__item"><label for="all" class="filter__label">ALL<input type="checkbox" id="all"></label></li>
-                        <li class="filter__item"><label for="company-news" class="filter__label">Company News<input
-                                    type="checkbox" id="company-new"></label></li>
-                        <li class="filter__item"><label for="business" class="filter__label">Business<input type="checkbox"
-                                    id="business"></label></li>
-                        <li class="filter__item"><label for="development" class="filter__label">Development<input type="checkbox"
-                                    id="development"></label></li>
-                        <li class="filter__item"><label for="design" class="filter__label">Design<input type="checkbox"
-                                    id="design"></label></li>
+                        <li class="filter__item">
+                            <input type="checkbox" id="all">
+                            <label for="all" class="filter__label">ALL</label></li>
+                        <li class="filter__item">
+                            <input type="checkbox" id="company-news">
+                            <label for="company-news" class="filter__label">Company News</label></li>
+                        <li class="filter__item">
+                            <input type="checkbox" id="business">
+                            <label for="business" class="filter__label">Business</label></li>
+                        <li class="filter__item">
+                                <input type="checkbox"
+                                id="development"><label for="development" class="filter__label">Development</label></li>
+                        <li class="filter__item"><input type="checkbox"
+                            id="design"><label for="design" class="filter__label">Design</label></li>
                     </ul>
                 </div>
             </div>
@@ -94,8 +115,8 @@
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
-            <!-- <div class="row next-row"> -->
+                <!-- </div> -->
+                <!-- <div class="row next-row"> -->
                 <div class="col-lg-4 col-xl-4 col-sm-6 col-12">
                     <div class="post">
                         <a href="#" class="post__link">
@@ -150,8 +171,8 @@
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
-            <!-- <div class="row next-row"> -->
+                <!-- </div> -->
+                <!-- <div class="row next-row"> -->
                 <div class="col-lg-4 col-xl-4 col-sm-6 col-12">
                     <div class="post">
                         <a href="#" class="post__link">
@@ -207,21 +228,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row list-wrapper">
+                <ul class="list">
+                    <li class="list__item list__item_active"><a href="#" class="list__link">1</a>
+                        <span class="list__line list__line_small"></span>
+                        <span class="list__line list__line_text">page</span>
+                        <span class="list__line list__line_long"></span>
+                    </li>
+                    <li class="list__item"><a href="#" class="list__link">2</a>
+                        <span class="list__line list__line_small"></span>
+                        <span class="list__line list__line_text">page</span>
+                        <span class="list__line list__line_long"></span></li>
+                    <li class="list__item"><a href="#" class="list__link">3</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="row list-wrapper">
-            <ul class="list">
-                <li class="list__item"><a href="#" class="list__link">1</a>
-                    <span class="list__line list__line_small"></span>
-                    <span class="list__line list__line_text">page</span>
-                    <span class="list__line list__line_long"></span>
-                </li>
-                <li class="list__item"><a href="#" class="list__link">2</a>
-                    <span class="list__line list__line_small"></span>
-                    <span class="list__line list__line_text">page</span>
-                    <span class="list__line list__line_long"></span></li>
-                <li class="list__item"><a href="#" class="list__link">3</a></li>
-            </ul>
-        </div>
+
     </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

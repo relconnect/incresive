@@ -1,0 +1,153 @@
+@import "portfolio-media";
+
+
+
+.portfolio-header {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      122deg,
+      hsla(197, 51%, 32%, 0.22),
+      hsla(0, 0%, 6%, 0.22)
+    ),
+    url(../../img/portfoli-header-bg.png);
+  background-size: cover;
+
+  .header-title {
+    margin-bottom: 0px;
+  }
+}
+
+.case {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+
+  &__link {
+    text-decoration: none;
+    display: block;
+  }
+
+  &__title {
+    position: relative;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover .case__img {
+      transform: scale(1.1);
+
+      &:before {
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__heading {
+    font-size: 20px;
+    font-family: "hanken_groteskbold";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__title-text {
+    font-size: 16px;
+    font-family: "Proxima Nova Rg";
+    color: rgb(24, 24, 26);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__logo {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    margin-left: -34px;
+    margin-top: 18px;
+    z-index: 2;
+  }
+
+  &__logo-img {
+    object-fit: contain;
+  }
+}
+
+.filter__list {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 16px 30px;
+  font: {
+    size: 18px;
+    family: "Proxima Nova Rg";
+  }
+  color: rgb(43, 43, 43);
+  line-height: 1.2;
+  padding-right: 58px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+option {
+  color: rgb(0, 0, 0);
+}
+
+.filter__item_select {
+  position: relative;
+}
+
+.filter__item_select:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 10px;
+  background-image: url("../../img/arrov.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  color: black;
+  z-index: -1;
+}

@@ -1,0 +1,15 @@
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .portfolio-header {
+    background-image: linear-gradient(
+        122deg,
+        hsla(197, 51%, 32%, 0.22),
+        hsla(0, 0%, 6%, 0.22)
+      ),
+      url(../../img/portfoli-header-bg@2x.png);
+  }
+}
+// @media only screen and (min-device-width: 992px) and (max-device-width: 1300px) {
+//   .case__logo {
+//     top: 42%;
+//   }
+// }
