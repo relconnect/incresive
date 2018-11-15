@@ -1698,6 +1698,146 @@ option {
   z-index: -1;
 }
 
+.contact {
+  max-width: 725px;
+  margin: 0 auto;
+}
+
+.contact__box {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.contact__header {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.contact__header .header-title {
+  color: #333333;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.contact__header .header-text {
+  color: #333333;
+}
+
+.contact__field {
+  margin-bottom: 5px;
+  margin-left: 25px;
+  width: 100%;
+}
+
+.contact__field .contact__input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(235, 232, 232, 0.702);
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  width: 100%;
+  line-height: 1.75;
+}
+
+.contact__field .contact__input:focus {
+  outline: 0;
+}
+
+.contact__field ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: rgba(127, 127, 127, 0.702);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__field ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: rgba(127, 127, 127, 0.702);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__field :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: rgba(127, 127, 127, 0.702);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__field :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: rgba(127, 127, 127, 0.702);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__number {
+  border-radius: 3px;
+  width: 43px;
+  height: 43px;
+  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__number-item {
+  font-size: 33px;
+  font-family: "Proxima Nova Rg";
+  -webkit-transform: scaleY(0.84);
+  transform: scaleY(0.84);
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.contact__number_active .contact__number-item {
+  color: black;
+}
+
+.contact__number_active + .contact__field ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__number_active + .contact__field ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__number_active + .contact__field :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact__number_active + .contact__field :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 16px;
+  font-family: "hanken_groteskregular";
+  color: #2c2c2c;
+  line-height: 1.2;
+  text-align: left;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
