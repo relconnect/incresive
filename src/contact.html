@@ -91,32 +91,63 @@
             </div>
           </div>
           <div class="row justify-content-center contact__box">
-            <div class="col-12 d-flex align-items-end">
+            <div class="col-12 d-flex">
               <div class="contact__number">
                 <span class="contact__number-item">4</span>
               </div>
               <div class="contact__field">
-                <input
-                  type="text"
+                <!--
+                  <input
+                    type="text"
+                    name="message"
+                    class="contact__input"
+                    placeholder="Message"
+                  />
+                -->
+                <textarea
                   name="message"
-                  class="contact__input"
+                  class="contact__textarea"
+                  id=""
+                  cols="30"
+                  rows="10"
                   placeholder="Message"
-                />
+                ></textarea>
               </div>
             </div>
           </div>
           <div class="row justify-content-center contact__box">
-            <div class="col-12 d-flex align-items-end">
+            <div class="col-12 d-flex align-items-center btn-wrapper">
               <input
                 type="submit"
-                class="contact__input"
+                class="submit__btn"
                 placeholder="Message"
-              /><span>or press ENTER</span>
+                value="Send"
+              />
+              <span class="submit__text">or press <b> ENTER</b></span>
+              <!-- <span class="submit__text submit__text-bold"></span> -->
             </div>
           </div>
         </section>
       </form>
     </main>
+    <div class="footer container-fluid">
+      <div class="footer__wrapper">
+        <div class="form__status">
+        <div class="progress__value">
+          <p class="progress__num">20%</p>
+          <p class="progress__text"><b>completed</b></p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="form__nav">
+        <p class="form__nav-btn form-btn_up form-btn_disabled"></p>
+        <p class="form__nav-btn form-btn_down"></p> 
+      </div>
+      </div>
+    </div>
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

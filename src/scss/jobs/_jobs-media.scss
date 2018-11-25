@@ -1,0 +1,65 @@
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .jobs-header {
+    background-image: linear-gradient(
+        122deg,
+        hsla(197, 51%, 32%, 0.64),
+        hsla(0, 0%, 6%, 0.64)
+      ),
+      url(../../img/jobs-header-bg@2x.png);
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+  .jobs-form {
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .jobs-content {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .jobs-form {
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs-form {
+    padding-right: 30px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .jobs-header {
+    padding-bottom: 10px;
+  }
+
+  .main-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .jobs-form {
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+  .jobs-content__text {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .jobs-form {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

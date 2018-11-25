@@ -1,0 +1,170 @@
+@import "jobs-media";
+
+.jobs-header {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      122deg,
+      rgba(40, 100, 123, 0.64),
+      hsla(0, 0%, 6%, 0.64)
+    ),
+    url(../../img/jobs-header-bg.png);
+  background-size: cover;
+}
+
+.jobs-container {
+  padding-top: 70px;
+}
+
+.main-content {
+  max-width: 1286px;
+  margin: 0 auto;
+  padding-left: 65px;
+  padding-bottom: 180px;
+  height: 820px;
+}
+
+.jobs-content {
+  width: 455px;
+  margin-top: 220px;
+
+  &__text {
+    font-size: 16px;
+    font-family: "Proxima Nova Rg";
+    color: rgb(24, 24, 26);
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  &__text:first-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+.jobs-form {
+  display: flex;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+  max-width: 611px;
+  height: 496px;
+  padding-left: 110px;
+  padding-right: 90px;
+  padding-top: 20px;
+  margin-top: 130px;
+  position: relative;
+
+  form {
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder {
+      
+    /* Chrome/Opera/Safari */
+    font-size: 16px;
+    font-family: "hanken_groteskregular";
+    color: rgba(127, 127, 127, 0.702);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  ::-moz-placeholder {
+
+    /* Firefox 19+ */
+    font-size: 16px;
+    font-family: "hanken_groteskregular";
+    color: rgba(127, 127, 127, 0.702);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  :-ms-input-placeholder {
+
+    /* IE 10+ */
+    font-size: 16px;
+    font-family: "hanken_groteskregular";
+    color: rgba(127, 127, 127, 0.702);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  :-moz-placeholder {
+
+    /* Firefox 18- */
+    font-size: 16px;
+    font-family: "hanken_groteskregular";
+    color: rgba(127, 127, 127, 0.702);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .jobs-field {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 20px;
+
+    &__input {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid hsla(0, 7%, 92%, 0.702);
+      font-size: 16px;
+      font-family: hanken_groteskregular;
+      width: 100%;
+      line-height: 1.75;
+      padding-left: 8px;
+      width: 100%;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    &__textarea {
+      width: 100%;
+      padding-left: 8px;
+      line-height: 1.75;
+      width: 100%;
+      height: 145px;
+      resize: none;
+      border: 2px solid hsla(0, 7%, 92%, 0.702);
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  .textarea-field {
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  .jobs-btn {
+    position: absolute;
+    bottom: -28px;
+    margin-left: -90px;
+    left: 50%;
+  }
+
+  .upload_btn {
+    font-size: 16px;
+    font-family: "HKGrotesk";
+    color: rgba(127, 127, 127, 0.702);
+    line-height: 1.75;
+    // text-align: left;
+    margin-left: 30px;
+    position: relative;
+
+    &-hiden {
+      visibility: hidden;
+    }
+
+    &:before {
+      position: absolute;
+      content: url(../../img/clip.png);
+      left: -28px;
+      top: -8px;
+    }
+  }
+}
